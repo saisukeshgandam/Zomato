@@ -49,6 +49,6 @@ stages:
 
                 - task: AzureWebApp@1
                   inputs:
-                    azureSubscription: 'YOUR-SERVICE-CONNECTION'  # replace with your service connection
-                    appName: 'YOUR-WEBAPP-NAME'                   # replace with your App Service name
+                    azureSubscription: 'Zomato-ARG'  # replace with your service connection
+                    appName: 'Zomato'                   # replace with your App Service name
                     package: '$(System.ArtifactsDirectory)/drop'
