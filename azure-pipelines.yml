@@ -4,7 +4,7 @@ trigger:
       - main   # Runs pipeline when code is pushed to main branch
 
 pool:
-  name: Default
+  name: SelfHostedAgentToken
 
 stages:
   - stage: Build
