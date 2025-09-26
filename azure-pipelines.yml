@@ -22,12 +22,12 @@ stages:
               npm run build || echo "No build script found, skipping build"
             displayName: "Install & Build App"
 
-         # - task: PublishBuildArtifacts@1
-          #  inputs:
-           #   PathtoPublish: '$(System.DefaultWorkingDirectory)'
-            #  ArtifactName: 'drop'
-             # publishLocation: 'Container'
-            #displayName: "Publish Build Artifacts"
+          - task: PublishBuildArtifacts@1
+            inputs:
+              PathtoPublish: '$(System.DefaultWorkingDirectory)'
+              ArtifactName: 'drop'
+              publishLocation: 'Container'
+            displayName: "Publish Build Artifacts"
 
   - stage: Deploy
     displayName: "Deploy to Azure WebApp"
